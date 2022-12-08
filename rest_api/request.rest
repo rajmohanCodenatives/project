@@ -1,0 +1,27 @@
+GET http://localhost:5005/users
+
+###
+GET http://localhost:5005/users/1
+
+###
+POST http://localhost:5005/users
+Content-Type: application/json
+
+{
+    "name": "bala",
+    "email": "bla@gmail.com",
+    "gender": "Male"
+}
+
+###
+PATCH http://localhost:5005/users/5
+Content-Type: application/json
+
+{
+    "name": "nandha",
+    "email": "nandha@gmail.com",
+    "gender": "Male"
+}
+
+###
+DELETE http://localhost:5005/users/3
